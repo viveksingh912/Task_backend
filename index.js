@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/api/auth", require("./Routes/auth"));
 app.use("/api/tasks", require("./Routes/tasks"));
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("New Hello World!");
 });
 
 app.listen(port, () => {

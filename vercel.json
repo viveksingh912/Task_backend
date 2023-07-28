@@ -1,15 +1,31 @@
 {
-    "version":2,
-    "builds":[
+    "version": 2,
+    "builds": [
         {
-            "src":"./index.js",
-            "use":"@vercel/node"
+            "src": "./index.js",
+            "use": "@vercel/node"
         }
     ],
-    "routes":[
+    "routes": [
         {
-            "src":"/(.*)",
-            "dest":"/"
+            "src": "/(.*)",
+            "dest": "/"
+        },
+        {
+            "src": "/api/auth/createuser",
+            "dest": "/Routes/auth.js"
+        },
+        {
+            "src": "/api/auth/login",
+            "dest": "/Routes/auth.js"
+        },
+        {
+            "src": "/api/auth/getuser",
+            "dest": "/Routes/auth.js"
+        },
+        {
+            "src": "/api/tasks",
+            "dest": "/Routes/tasks.js"
         }
     ]
 }
