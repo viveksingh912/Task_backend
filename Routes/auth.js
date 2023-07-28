@@ -7,6 +7,9 @@ const { body, validationResult } = require("express-validator");
 const router = express.Router();
 const JWT_SECRET = "Thisismeoryou";
 // ROUTE -1: to create user 
+router.get('/',(req,res)=>{
+  res.send("Hello World! auth");
+})
 router.post(
   "/createuser",
   [
