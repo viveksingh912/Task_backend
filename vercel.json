@@ -10,22 +10,6 @@
         {
             "src": "/(.*)",
             "dest": "/"
-        },
-        {
-            "src": "/api/auth/createuser",
-            "dest": "/Routes/auth.js"
-        },
-        {
-            "src": "/api/auth/login",
-            "dest": "/Routes/auth.js"
-        },
-        {
-            "src": "/api/auth/getuser",
-            "dest": "/Routes/auth.js"
-        },
-        {
-            "src": "/api/tasks",
-            "dest": "/Routes/tasks.js"
         }
     ]
 }
